@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the dataset (replace 'your_dataset.csv' with the actual path)
-df = pd.read_csv('Average Claim Report.csv')
+df = pd.read_csv('cleaned_data.csv')
 
 # Convert column to numeric, coercing errors to NaN
 df['ACLC (Average Claimant Cost Doctor Clinic)'] = pd.to_numeric(df['ACLC (Average Claimant Cost Doctor Clinic)'], errors='coerce')
